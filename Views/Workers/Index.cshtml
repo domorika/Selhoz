@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Selhoz.Models.Worker>
+@{
+    ViewData["Title"] = "Справочник сотрудников";
+}
+
+<h2 class="mb-4">👷 Сотрудники предприятия</h2>
+
+<table class="table table-striped table-hover">
+    <thead class="table-success">
+        <tr>
+            <th>ID</th>
+            <th>ФИО</th>
+            <th>Должность</th>
+            <th>Телефон</th>
+            <th>Квалификация</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var worker in Model)
+        {
+            <tr>
+                <td>@worker.WorkerId</td>
+                <td>@worker.FullName</td>
+                <td>@worker.Position</td>
+                <td>@worker.ContactPhone</td>
+                <td>@worker.Qualification</td>
+            </tr>
+        }
+    </tbody>
+</table>

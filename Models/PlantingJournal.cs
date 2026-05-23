@@ -1,6 +1,4 @@
-﻿// Models/PlantingJournal.cs
-using Selhoz.Models;
-using System;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -15,18 +13,21 @@ namespace Selhoz.Models
 
         [Column("field_id")]
         public int FieldId { get; set; }
+
         [ForeignKey("FieldId")]
-        public Field Field { get; set; }
+        public Field? Field { get; set; }
 
         [Column("plant_id")]
         public int PlantId { get; set; }
+
         [ForeignKey("PlantId")]
-        public Plant Plant { get; set; }
+        public Plant? Plant { get; set; }
 
         [Column("worker_id")]
         public int WorkerId { get; set; }
+
         [ForeignKey("WorkerId")]
-        public Worker Worker { get; set; }
+        public Worker? Worker { get; set; }
 
         [Required]
         [DataType(DataType.Date)]
@@ -37,12 +38,12 @@ namespace Selhoz.Models
         [Column("harvest_date")]
         public DateTime? HarvestDate { get; set; }
 
-        [Column("seed_amount", TypeName = "numeric(3,2)")]
+        [Column("seed_amount")]
         public decimal SeedAmount { get; set; }
 
         [Required]
         [StringLength(30)]
         [Column("status")]
-        public string Status { get; set; } // "Посадка", "Полив", "Сбор"
+        public string Status { get; set; } = string.Empty;
     }
 }

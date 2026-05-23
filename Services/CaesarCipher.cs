@@ -3,14 +3,28 @@ namespace Selhoz.Services
 {
     public class CaesarCipher
     {
-        public string Encrypt(string text, int key)
+        private const int EncryptionStep = 3; // Шаг сдвига
+
+        public string EncryptData(string input)
         {
-            char[] buffer = text.ToCharArray();
+            if (string.IsNullOrEmpty(input)) return input;
+
+            char[] buffer = input.ToCharArray();
             for (int i = 0; i < buffer.Length; i++)
             {
-                char letter = buffer[i];
-                letter = (char)(letter + key);
-                buffer[i] = letter;
+                buffer[i] = (char)(buffer[i] + EncryptionStep);
+            }
+            return new string(buffer);
+        }
+
+        public string DecryptData(string input)
+        {
+            if (string.IsNullOrEmpty(input)) return input;
+
+            char[] buffer = input.ToCharArray();
+            for (int i = 0; i < buffer.Length; i++)
+            {
+                buffer[i] = (char)(buffer[i] - EncryptionStep);
             }
             return new string(buffer);
         }

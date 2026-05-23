@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Selhoz.Models.Plant>
+@{
+    ViewData["Title"] = "Справочник культур";
+}
+
+<h2 class="mb-4">🌱 Справочник сельскохозяйственных культур</h2>
+
+<table class="table table-striped table-hover">
+    <thead class="table-success">
+        <tr>
+            <th>ID</th>
+            <th>Название культуры</th>
+            <th>Тип</th>
+            <th>Период роста (дней)</th>
+            <th>Потребность в воде</th>
+            <th>Климатическая зона</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var plant in Model)
+        {
+            <tr>
+                <td>@plant.PlantId</td>
+                <td>@plant.PlantName</td>
+                <td>@plant.PlantType</td>
+                <td>@plant.GrowthPeriod</td>
+                <td>@plant.WaterRequirements</td>
+                <td>@plant.ClimateZone</td>
+            </tr>
+        }
+    </tbody>
+</table>

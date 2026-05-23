@@ -1,11 +1,9 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿// Controllers/PlantingJournalController.cs
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Selhoz.Data;
 using Selhoz.Models;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace SelhozApp.Controllers
 {
     [Authorize]
@@ -18,36 +16,43 @@ namespace SelhozApp.Controllers
             _context = context;
         }
 
-        // Вывод списка с фильтрацией по статусу (Посадка/Полив/Сбор)
-        public async Task<IActionResult> Index(string statusFilter)
+        // Просмотр журнала с возможностью фильтрации
+        public async Task<IActionResult> Index(string currentStatus)
         {
-            var query = _context.PlantingJournals
+            var journalRecords = _context.PlantingJournals
                 .Include(p => p.Field)
                 .Include(p => p.Plant)
                 .Include(p => p.Worker)
                 .AsQueryable();
 
-            if (!string.IsNullOrEmpty(statusFilter))
+            if (!string.IsNullOrEmpty(currentStatus))
             {
-                query = query.FilterByStatus(statusFilter); // Использование расширения бизнес-логики
+                journalRecords = journalRecords.Where(j => j.Status == currentStatus);
             }
 
-            return View(await query.ToListAsync());
+            return View(await journalRecords.ToListAsync());
         }
 
-        // Создание нового наряда-записи (Разрешено только Агроному-администратору)
+        // Формирование наряда (Доступ имеет только Агроном-администратор)
+        [Authorize(Roles = "Agronomist")]
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
         [Authorize(Roles = "Agronomist")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("FieldId,PlantId,WorkerId,PlantingDate,SeedAmount,Status")] PlantingJournal record)
+        public async Task<IActionResult> Create([Bind("FieldId,PlantId,WorkerId,PlantingDate,Status")] PlantingJournal plantingRecord)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(record);
+                _context.Add(plantingRecord);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(record);
+            return View(plantingRecord);
         }
     }
 }
