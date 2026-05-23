@@ -1,0 +1,54 @@
+﻿@model Selhoz.Models.Field
+@{
+    ViewData["Title"] = "Добавить поле";
+}
+
+<div class="row justify-content-center mt-4">
+    <div class="col-md-8">
+        <div class="card shadow border-0">
+            <div class="card-header bg-success text-white">
+                <h4 class="mb-0">🌾 Добавление нового поля</h4>
+            </div>
+            <div class="card-body p-4">
+                <form asp-action="Create" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="FieldNumber" class="form-label">Номер / Название поля</label>
+                        <input asp-for="FieldNumber" class="form-control" placeholder="Например, Поле №4 или Северный участок" />
+                        <span asp-validation-for="FieldNumber" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Area" class="form-label">Площадь (га)</label>
+                        <input asp-for="Area" class="form-control" type="number" step="0.01" />
+                        <span asp-validation-for="Area" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="SoilType" class="form-label">Тип почвы</label>
+                        <input asp-for="SoilType" class="form-control" placeholder="Чернозем, суглинок и т.д." />
+                        <span asp-validation-for="SoilType" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="IrrigationType" class="form-label">Тип полива</label>
+                        <input asp-for="IrrigationType" class="form-control" placeholder="Капельный, дождевание, отсутствует" />
+                        <span asp-validation-for="IrrigationType" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Location" class="form-label">Местоположение</label>
+                        <input asp-for="Location" class="form-control" placeholder="Географический сектор или координаты" />
+                        <span asp-validation-for="Location" class="text-danger"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4">
+                        <a asp-action="Index" class="btn btn-outline-secondary">Назад к списку</a>
+                        <button type="submit" class="btn btn-success">Сохранить поле</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

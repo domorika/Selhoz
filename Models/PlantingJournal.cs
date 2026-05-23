@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.RegularExpressions;
 
 namespace Selhoz.Models
 {
@@ -9,7 +10,8 @@ namespace Selhoz.Models
         public int FieldId { get; set; }
         public Field? Field { get; set; }
 
-        public int CultureId { get; set; }
+        public int PlantId { get; set; }
+
         public Plant? Plant { get; set; }
 
         public int WorkerId { get; set; }

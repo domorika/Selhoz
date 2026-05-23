@@ -1,0 +1,81 @@
+﻿@model IEnumerable<Selhoz.Models.PlantingJournal>
+
+@{
+    ViewData["Title"] = "Журнал посевов";
+}
+
+<h4 style="font-family: Verdana;"><b>📖 Журнал посевов и сбора урожая</b></h4>
+<br />
+   
+
+<div class="table-responsive shadow-sm rounded">
+    <table class="table table-bordered table-hover bg-white m-0" style="font-family: Verdana; font-size: 11pt;">
+        <thead class="table-success">
+            <tr>
+                <th>Поле</th>
+                <th>Культура</th>
+                <th>Ответственный сотрудник</th>
+                <th>Дата посадки</th>
+                <th>Дата сбора урожая</th>
+                <th>Статус</th>
+                <th>Примечания</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="fw-bold">@item.Field?.FieldNumber</td>
+                        <td>@item.Plant?.Name</td>
+                        <td>@item.Worker?.FullName</td>
+                        <td>@item.PlantingDate.ToString("dd.MM.yyyy")</td>
+                        <td>
+                            @(item.HarvestDate.HasValue? item.HarvestDate.Value.ToString("dd.MM.yyyy") : "—")
+                        </td>
+                        <td>
+                            @if (item.Status == "Посажено")
+                            {
+                                <span class="badge bg-info text-dark">Посажено</span>
+                            }
+                            else if (item.Status == "Созревает")
+                            {
+                                <span class="badge bg-warning text-dark">Созревает</span>
+                            }
+                            else if (item.Status == "Собрано")
+                            {
+                                <span class="badge bg-success">Собрано</span>
+                            }
+                            else if (item.Status == "Проблема")
+                            {
+                                <span class="badge bg-danger">Проблема</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary">@item.Status</span>
+                            }
+                        </td>
+                        <td class="text-muted small">@item.Notes</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="7" class="text-center text-muted py-4">
+                        Записи в журнале посевов отсутствуют.
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="d-flex justify-content-end mt-3">
+        @if (User.IsInRole("Agronom") || User.IsInRole("Director"))
+        {
+            <a asp-action="Create" class="btn btn-success" style="font-family: Verdana; font-size: 14pt;">Добавить запись</a>
+
+        }
+    </div>
+</div>

@@ -1,0 +1,48 @@
+﻿@model Selhoz.Models.Worker
+@{
+    ViewData["Title"] = "Добавить сотрудника";
+}
+
+<div class="row justify-content-center mt-4">
+    <div class="col-md-8">
+        <div class="card shadow border-0">
+            <div class="card-header bg-success text-white">
+                <h4 class="mb-0">👷 Оформление нового сотрудника</h4>
+            </div>
+            <div class="card-body p-4">
+                <form asp-action="Create" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="FullName" class="form-label">ФИО сотрудника</label>
+                        <input asp-for="FullName" class="form-control" />
+                        <span asp-validation-for="FullName" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Position" class="form-label">Должность</label>
+                        <input asp-for="Position" class="form-control" placeholder="Тракторист, Агроном, Лаборант..." />
+                        <span asp-validation-for="Position" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Phone" class="form-label">Номер телефона</label>
+                        <input asp-for="Phone" class="form-control" placeholder="+7 (999) 000-00-00" />
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Education" class="form-label">Образование / Квалификация</label>
+                        <input asp-for="Education" class="form-control" placeholder="Высшее, среднее специальное..." />
+                        <span asp-validation-for="Education" class="text-danger"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4">
+                        <a asp-action="Index" class="btn btn-outline-secondary">Назад к списку</a>
+                        <button type="submit" class="btn btn-success">Зарегистрировать</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

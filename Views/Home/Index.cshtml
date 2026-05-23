@@ -1,45 +1,89 @@
 ﻿@model IEnumerable<Selhoz.Models.NotificationViewModel>
-
 @{
     ViewData["Title"] = "Главная панель";
 }
 
-<div class="dashboard-header mb-4 p-4 text-white rounded-3" style="background: linear-gradient(135deg, #2e7d32, #4caf50);">
-    <h2>🌾 Панель уведомлений</h2>
-    <p class="mb-0">Добро пожаловать в систему управления сельхозпредприятием</p>
-</div>
-
-<div class="row">
+<div class="row mt-4 g-4">
     <div class="col-12">
-        <div class="card shadow">
-            <div class="card-header bg-light">
-                <h5>📢 Актуальные уведомления</h5>
+        <h4 class="mb-3 text-secondary">🗂️ Управление реестрами и справочниками</h4>
+    </div>
+
+    <div class="col-12">
+        <div class="card shadow-sm border-0 notification-card p-3">
+            <div class="row align-items-center">
+                <div class="col-md-9">
+                    <h5 class="card-title mb-1 fw-bold text-success">🌾 Реестр полей предприятия</h5>
+                    <p class="card-text text-muted mb-0 small">
+                        Просмотр информации о гектарных площадях, типах почвы, используемых системах полива и географическом местоположении участков.
+                    </p>
+                </div>
+                <div class="col-md-3 text-md-end mt-3 mt-md-0">
+                    <a asp-controller="Fields" asp-action="Index" class="btn btn-success w-100 py-2">Открыть реестр</a>
+                </div>
             </div>
-            <div class="card-body">
-                @if (!Model.Any())
-                {
-                    <p class="text-muted text-center py-5 fs-5">На данный момент нет новых уведомлений ✅</p>
-                }
-                else
-                {
-                    @foreach (var item in Model)
-                    {
-                        <div class="notification-card card mb-3 border-0 shadow-sm">
-                            <div class="card-body">
-                                <h6>@item.Title</h6>
-                                <p>@item.Message</p>
-                                <small class="text-muted">@item.Date.ToString("dd.MM.yyyy HH:mm")</small>
-                            </div>
-                        </div>
-                    }
-                }
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="card shadow-sm border-0 notification-card p-3">
+            <div class="row align-items-center">
+                <div class="col-md-9">
+                    <h5 class="card-title mb-1 fw-bold text-success">🌱 Реестр сельскохозяйственных культур</h5>
+                    <p class="card-text text-muted mb-0 small">
+                        Управление каталогом растений, просмотр периодов вегетации, климатических требований и нормативов потребления воды.
+                    </p>
+                </div>
+                <div class="col-md-3 text-md-end mt-3 mt-md-0">
+                    <a asp-controller="Plants" asp-action="Index" class="btn btn-success w-100 py-2">Открыть реестр</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="card shadow-sm border-0 notification-card p-3">
+            <div class="row align-items-center">
+                <div class="col-md-9">
+                    <h5 class="card-title mb-1 fw-bold text-success">👷 Реестр сотрудников и персонала</h5>
+                    <p class="card-text text-muted mb-0 small">
+                        Справочник должностей, квалификации сотрудников, контактных данных и распределения обязанностей на предприятии.
+                    </p>
+                </div>
+                <div class="col-md-3 text-md-end mt-3 mt-md-0">
+                    <a asp-controller="Workers" asp-action="Index" class="btn btn-success w-100 py-2">Открыть реестр</a>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="mt-4 text-center">
-    <a asp-controller="Fields" asp-action="Index" class="btn btn-primary btn-lg me-3">📋 Справочники и Реестры</a>
-    <a asp-controller="PlantingJournal" asp-action="Index" class="btn btn-success btn-lg">📖 Журнал посевов</a>
-    <a asp-controller="Account" asp-action="Logout" class="btn btn-outline-danger btn-lg">Выход</a>
+<div class="mt-5 text-center p-4 rounded-3 bg-light border">
+    <h5 class="mb-3">📊 Оперативный учёт деятельности</h5>
+    <a asp-controller="PlantingJournal" asp-action="Index" class="btn btn-primary btn-lg px-5">
+        📖 Открыть журнал посевов
+    </a>
 </div>
+
+<h3 class="mb-4" style="font-family: Verdana;">Системные уведомления</h3>
+
+@if (Model != null && Model.Any())
+{
+    <div class="list-group">
+        @foreach (var notification in Model)
+        {
+            <div class="list-group-item list-group-item-action notification-card">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 fw-bold">@notification.Title</h5>
+                    <small class="text-muted">@notification.Date.ToString("dd.MM.yyyy HH:mm")</small>
+                </div>
+                <p class="mb-1">@notification.Message</p>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="alert alert-info" role="alert" style="font-family: Verdana;">
+        На данный момент новых уведомлений нет.
+    </div>
+}

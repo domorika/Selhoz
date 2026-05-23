@@ -28,3 +28,10 @@
         }
     </tbody>
 </table>
+<br />
+<div class="d-flex justify-content-end mb-5">
+    @if (User.IsInRole("Agronom") || User.IsInRole("Director"))
+    {
+        <a asp-action="Create" class="btn btn-success" style="font-family: Verdana; font-size: 12pt; padding: 8px 20px;">+ Добавить поле</a>
+    }
+</div>

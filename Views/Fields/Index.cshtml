@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Selhoz.Models.Field>
+@{
+    ViewData["Title"] = "Справочники предприятия";
+}
+
+<div class="mb-4">
+    <h4 style="font-family: Verdana; font-weight: bold;">🗺️ Реестр полей</h4>
+</div>
+
+<div class="table-responsive shadow-sm rounded mb-4">
+    <table class="table table-bordered table-hover bg-white m-0" style="font-family: Verdana;">
+        <thead class="table-success">
+            <tr>
+                <th>Номер поля</th>
+                <th>Площадь (га)</th>
+                <th>Тип почвы</th>
+                <th>Тип полива</th>
+                <th>Местоположение</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                @foreach (var field in Model)
+                {
+                    <tr>
+                        <td class="fw-bold">@field.FieldNumber</td>
+                        <td>@field.Area</td>
+                        <td>@field.SoilType</td>
+                        <td>@field.IrrigationType</td>
+                        <td>@field.Location</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5" class="text-center text-muted py-4">Данные о полях еще не внесены.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="d-flex justify-content-end mb-5">
+    @if (User.IsInRole("Agronom") || User.IsInRole("Director"))
+    {
+        <a asp-action="Create" class="btn btn-success" style="font-family: Verdana; font-size: 12pt; padding: 8px 20px;">+ Добавить поле</a>
+    }
+</div>

@@ -21,5 +21,18 @@ namespace Selhoz.Controllers
 
         [Authorize(Roles = "Agronom,Director")]
         public IActionResult Create() => View();
+
+        [HttpPost]
+        [Authorize(Roles = "Agronom,Director")]
+        public async Task<IActionResult> Create(Plant plant)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Plants.Add(plant);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(plant);
+        }
     }
 }

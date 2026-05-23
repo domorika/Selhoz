@@ -1,0 +1,78 @@
+﻿@model Selhoz.Models.PlantingJournal
+
+@{
+    ViewData["Title"] = "Добавить запись в журнал";
+}
+
+<div class="row justify-content-center mt-4">
+    <div class="col-md-8 col-lg-6">
+        <div class="card shadow">
+            <div class="card-header bg-success text-white">
+                <h5 class="mb-0" style="font-family: Verdana;">📝 Новая запись в журнал посевов</h5>
+            </div>
+            <div class="card-body" style="font-family: Verdana; font-size: 11pt;">
+                <form asp-action="Create" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="FieldId" class="form-label fw-bold">Поле</label>
+                        <select asp-for="FieldId" class="form-select" asp-items="ViewBag.Fields">
+                            <option value="">— Выберите номер поля —</option>
+                        </select>
+                        <span asp-validation-for="FieldId" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="PlantId" class="form-label fw-bold">Культура</label>
+                        <select asp-for="PlantId" class="form-select" asp-items="ViewBag.Plants">
+                            <option value="">— Выберите культуру —</option>
+                        </select>
+                        <span asp-validation-for="PlantId" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="WorkerId" class="form-label fw-bold">Ответственный сотрудник</label>
+                        <select asp-for="WorkerId" class="form-select" asp-items="ViewBag.Workers">
+                            <option value="">— Выберите сотрудника —</option>
+                        </select>
+                        <span asp-validation-for="WorkerId" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="PlantingDate" class="form-label fw-bold">Дата посадки</label>
+                        <input asp-for="PlantingDate" type="date" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                        <span asp-validation-for="PlantingDate" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="HarvestDate" class="form-label fw-bold">Дата сбора урожая (при наличии)</label>
+                        <input asp-for="HarvestDate" type="date" class="form-control" />
+                        <span asp-validation-for="HarvestDate" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Status" class="form-label fw-bold">Статус посева</label>
+                        <select asp-for="Status" class="form-select">
+                            <option value="Посажено">Посажено</option>
+                            <option value="Созревает">Созревает</option>
+                            <option value="Собрано">Собрано</option>
+                            <option value="Проблема">Проблема</option>
+                        </select>
+                        <span asp-validation-for="Status" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Notes" class="form-label fw-bold">Примечания</label>
+                        <textarea asp-for="Notes" class="form-control" rows="3" placeholder="Введите дополнительные сведения..."></textarea>
+                        <span asp-validation-for="Notes" class="text-danger"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-between pt-2">
+                        <a asp-action="Index" class="btn btn-secondary">Отмена</a>
+                        <button type="submit" class="btn btn-success">Сохранить запись</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
