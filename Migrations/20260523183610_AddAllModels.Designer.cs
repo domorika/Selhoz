@@ -328,7 +328,7 @@ namespace Selhoz.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("CultureId")
+                    b.Property<int>("PlantId")
                         .HasColumnType("integer");
 
                     b.Property<int>("FieldId")

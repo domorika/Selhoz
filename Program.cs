@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Selhoz.Data;
 
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>

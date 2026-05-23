@@ -15,7 +15,7 @@ namespace Selhoz.Migrations
                 table: "PlantingJournal");
 
             migrationBuilder.DropColumn(
-                name: "CultureId",
+                name: "PlantId",
                 table: "PlantingJournal");
 
             migrationBuilder.AlterColumn<int>(
@@ -53,7 +53,7 @@ namespace Selhoz.Migrations
                 oldType: "integer");
 
             migrationBuilder.AddColumn<int>(
-                name: "CultureId",
+                name: "PlantId",
                 table: "PlantingJournal",
                 type: "integer",
                 nullable: false,

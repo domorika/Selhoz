@@ -70,12 +70,11 @@
             }
         </tbody>
     </table>
+</div>
 
-    <div class="d-flex justify-content-end mt-3">
-        @if (User.IsInRole("Agronom") || User.IsInRole("Director"))
-        {
-            <a asp-action="Create" class="btn btn-success" style="font-family: Verdana; font-size: 14pt;">Добавить запись</a>
-
-        }
-    </div>
+<div class="d-flex justify-content-end mb-5 mt-3">
+    @if (User.IsInRole("Agronom") || User.IsInRole("Director"))
+    {
+        <a asp-action="Create" class="btn btn-success" style="font-family: Verdana; font-size: 12pt; padding: 8px 20px;">+ Добавить запись</a>
+    }
 </div>

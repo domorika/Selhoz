@@ -131,7 +131,7 @@ namespace Selhoz.Migrations
             migrationBuilder.RenameColumn(
                 name: "record_id",
                 table: "PlantingJournal",
-                newName: "CultureId");
+                newName: "PlantId");
 
             migrationBuilder.RenameIndex(
                 name: "IX_plantingjournal_worker_id",
@@ -211,7 +211,7 @@ namespace Selhoz.Migrations
                 oldType: "integer");
 
             migrationBuilder.AlterColumn<int>(
-                name: "CultureId",
+                name: "PlantId",
                 table: "PlantingJournal",
                 type: "integer",
                 nullable: false,
@@ -469,7 +469,7 @@ namespace Selhoz.Migrations
                 newName: "field_id");
 
             migrationBuilder.RenameColumn(
-                name: "CultureId",
+                name: "PlantId",
                 table: "plantingjournal",
                 newName: "record_id");
 

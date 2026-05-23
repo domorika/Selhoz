@@ -22,27 +22,26 @@ namespace Selhoz.Controllers
             return View(workers);
         }
 
+        // GET: Открывает страницу добавления сотрудника
         [Authorize(Roles = "Agronom,Director")]
-        public async Task<IActionResult> Create()
+        public IActionResult Create()
         {
-            ViewBag.Fields = new SelectList(await _context.Fields.ToListAsync(), "Id", "FieldNumber");
-            ViewBag.Plants = new SelectList(await _context.Plants.ToListAsync(), "Id", "Name");
-            ViewBag.Workers = new SelectList(await _context.Workers.ToListAsync(), "Id", "FullName");
             return View();
         }
 
+        // POST: Сохраняет нового сотрудника в правильную таблицу базы данных
         [HttpPost]
+        [ValidateAntiForgeryToken]
         [Authorize(Roles = "Agronom,Director")]
-        public async Task<IActionResult> Create(PlantingJournal record)
+        public async Task<IActionResult> Create(Worker worker)
         {
-            ModelState.Remove("Field"); ModelState.Remove("Plant"); ModelState.Remove("Worker");
             if (ModelState.IsValid)
             {
-                _context.PlantingJournal.Add(record);
+                _context.Workers.Add(worker);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(record);
+            return View(worker);
         }
     }
 }
