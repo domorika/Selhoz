@@ -1,49 +1,25 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.Text.RegularExpressions;
 
 namespace Selhoz.Models
 {
-    [Table("plantingjournal")]
     public class PlantingJournal
     {
-        [Key]
-        [Column("record_id")]
-        public int RecordId { get; set; }
+        public int Id { get; set; }
 
-        [Column("field_id")]
         public int FieldId { get; set; }
-
-        [ForeignKey("FieldId")]
         public Field? Field { get; set; }
 
-        [Column("plant_id")]
-        public int PlantId { get; set; }
-
-        [ForeignKey("PlantId")]
+        public int CultureId { get; set; }
         public Plant? Plant { get; set; }
 
-        [Column("worker_id")]
         public int WorkerId { get; set; }
-
-        [ForeignKey("WorkerId")]
         public Worker? Worker { get; set; }
 
-        [Required]
-        [DataType(DataType.Date)]
-        [Column("planting_date")]
         public DateTime PlantingDate { get; set; }
-
-        [DataType(DataType.Date)]
-        [Column("harvest_date")]
         public DateTime? HarvestDate { get; set; }
 
-        [Column("seed_amount")]
-        public decimal SeedAmount { get; set; }
+        public string Status { get; set; } = "Посажено"; // Посажено, Созревает, Собрано, Проблема
 
-        [Required]
-        [StringLength(30)]
-        [Column("status")]
-        public string Status { get; set; } = string.Empty;
+        public string Notes { get; set; } = string.Empty;
     }
 }

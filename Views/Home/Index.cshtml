@@ -1,31 +1,45 @@
 ﻿@model IEnumerable<Selhoz.Models.NotificationViewModel>
+
 @{
     ViewData["Title"] = "Главная панель";
 }
 
-<h2 class="mb-4">Панель уведомлений</h2>
+<div class="dashboard-header mb-4 p-4 text-white rounded-3" style="background: linear-gradient(135deg, #2e7d32, #4caf50);">
+    <h2>🌾 Панель уведомлений</h2>
+    <p class="mb-0">Добро пожаловать в систему управления сельхозпредприятием</p>
+</div>
 
-<table class="table table-hover">
-    <thead class="table-success">
-        <tr>
-            <th>Тип</th>
-            <th>Описание</th>
-            <th>Статус</th>
-            <th>Дата</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr class="@(item.IsCritical ? "table-danger" : "")">
-                <td><span class="badge @item.BadgeClass">@item.Type</span></td>
-                <td>@item.Description</td>
-                <td><strong>@item.StatusText</strong></td>
-                <td>@item.CreationDate.ToShortDateString()</td>
-            </tr>
-        }
-    </tbody>
-</table>
+<div class="row">
+    <div class="col-12">
+        <div class="card shadow">
+            <div class="card-header bg-light">
+                <h5>📢 Актуальные уведомления</h5>
+            </div>
+            <div class="card-body">
+                @if (!Model.Any())
+                {
+                    <p class="text-muted text-center py-5 fs-5">На данный момент нет новых уведомлений ✅</p>
+                }
+                else
+                {
+                    @foreach (var item in Model)
+                    {
+                        <div class="notification-card card mb-3 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h6>@item.Title</h6>
+                                <p>@item.Message</p>
+                                <small class="text-muted">@item.Date.ToString("dd.MM.yyyy HH:mm")</small>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>
 
-<a href="/Plants" class="btn btn-success me-2">Справочники → Культуры</a>
-<a href="/Workers" class="btn btn-success">Сотрудники</a>
+<div class="mt-4 text-center">
+    <a asp-controller="Fields" asp-action="Index" class="btn btn-primary btn-lg me-3">📋 Справочники и Реестры</a>
+    <a asp-controller="PlantingJournal" asp-action="Index" class="btn btn-success btn-lg">📖 Журнал посевов</a>
+    <a asp-controller="Account" asp-action="Logout" class="btn btn-outline-danger btn-lg">Выход</a>
+</div>

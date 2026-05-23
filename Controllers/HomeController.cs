@@ -1,20 +1,47 @@
+п»їusing Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Selhoz.Data;
 using Selhoz.Models;
 
 namespace Selhoz.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
-        public IActionResult Index()
-        {
-            var notifications = new List<NotificationViewModel>
-            {
-                new NotificationViewModel { Type = "Критическое", Description = "Низкий уровень азота на поле №3", StatusText = "Требует внимания", IsCritical = true },
-                new NotificationViewModel { Type = "Задача", Description = "Посадка пшеницы на поле №5", StatusText = "В работе", CreationDate = DateTime.Now.AddHours(-2) },
-                new NotificationViewModel { Type = "Предупреждение", Description = "Скоро сбор урожая на поле №2", StatusText = "Подготовка" }
-            };
+        private readonly ApplicationDbContext _context;
+        private readonly UserManager<IdentityUser> _userManager;
 
-            return View(notifications);
+        public HomeController(ApplicationDbContext context, UserManager<IdentityUser> userManager)
+        {
+            _context = context;
+            _userManager = userManager;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+                return RedirectToAction("Login", "Account");
+
+            var notifications = await _context.Notifications
+                .Where(n => n.UserId == user.Id && !n.IsRead)
+                .OrderByDescending(n => n.Date)
+                .Select(n => new NotificationViewModel
+                {
+                    Id = n.Id,
+                    Title = n.Title,
+                    Message = n.Message,
+                    Date = n.Date,
+                    Type = n.Type,
+                    IsRead = n.IsRead
+                })
+                .ToListAsync();
+
+            ViewBag.UserRoles = await _userManager.GetRolesAsync(user);
+
+            return View(notifications);   // в†ђ Р’Р°Р¶РЅРѕ: NotificationViewModel
         }
     }
 }

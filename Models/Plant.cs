@@ -1,33 +1,15 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace Selhoz.Models
+﻿namespace Selhoz.Models
 {
-    [Table("plants")]
     public class Plant
     {
-        [Key]
-        [Column("plant_id")]
-        public int PlantId { get; set; }
+        public int Id { get; set; }
 
-        [Required]
-        [StringLength(30)]
-        [Column("plant_name")]
-        public string PlantName { get; set; } = string.Empty;
+        public string Name { get; set; } = string.Empty;                    // Название культуры
+        public int GrowthPeriodDays { get; set; }                           // Период роста (дней)
+        public string ClimateRequirements { get; set; } = string.Empty;     // Требования к климату
+        public string WaterRequirements { get; set; } = string.Empty;       // Требования к поливу
+        public string Type { get; set; } = string.Empty;
 
-        [StringLength(30)]
-        [Column("plant_type")]
-        public string PlantType { get; set; } = string.Empty;
-
-        [Column("growth_period")]
-        public int GrowthPeriod { get; set; }
-
-        [StringLength(30)]
-        [Column("water_requirements")]
-        public string WaterRequirements { get; set; } = string.Empty;
-
-        [StringLength(30)]
-        [Column("climate_zone")]
-        public string ClimateZone { get; set; } = string.Empty;
+        public ICollection<PlantingJournal> PlantingJournals { get; set; } = new List<PlantingJournal>();
     }
 }

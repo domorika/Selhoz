@@ -1,33 +1,16 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace Selhoz.Models
+﻿namespace Selhoz.Models
 {
-    [Table("fields")]
     public class Field
     {
-        [Key]
-        [Column("field_id")]
-        public int FieldId { get; set; }
+        public int Id { get; set; }
 
-        [Required]
-        [StringLength(150)]
-        [Column("field_name")]
-        public string FieldName { get; set; } = string.Empty;
+        public string FieldNumber { get; set; } = string.Empty;     // Номер поля
+        public decimal Area { get; set; }                           // Площадь в гектарах
+        public string SoilType { get; set; } = string.Empty;        // Тип почвы
+        public string IrrigationType { get; set; } = string.Empty;  // Тип полива
+        public string Location { get; set; } = string.Empty;        // Местоположение
 
-        [Required]
-        [Column("area")]
-        public decimal Area { get; set; }
-
-        [StringLength(30)]
-        [Column("soil_type")]
-        public string SoilType { get; set; } = string.Empty;
-
-        [Column("irrigation")]
-        public bool Irrigation { get; set; }
-
-        [StringLength(30)]
-        [Column("last_crop")]
-        public string LastCrop { get; set; } = string.Empty;
+        // Навигационные свойства
+        public ICollection<PlantingJournal> PlantingJournals { get; set; } = new List<PlantingJournal>();
     }
 }

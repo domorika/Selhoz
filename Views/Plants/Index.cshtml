@@ -20,12 +20,12 @@
         @foreach (var plant in Model)
         {
             <tr>
-                <td>@plant.PlantId</td>
-                <td>@plant.PlantName</td>
-                <td>@plant.PlantType</td>
-                <td>@plant.GrowthPeriod</td>
+                <td>@plant.Id</td>
+                <td>@plant.Name</td>
+                <td>@plant.Type</td>
+                <td>@plant.GrowthPeriodDays</td>
                 <td>@plant.WaterRequirements</td>
-                <td>@plant.ClimateZone</td>
+                <td>@plant.ClimateRequirements</td>
             </tr>
         }
     </tbody>
