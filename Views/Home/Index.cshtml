@@ -1,0 +1,82 @@
+﻿@model IEnumerable<Selhoz.Models.NotificationViewModel>
+@{
+    ViewData["Title"] = "Главная панель";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 sidebar-navigation shadow-sm p-4">
+            <a class="btn btn-menu btn-success-custom w-100 mb-3" href="@Url.Action("Index", "Dictionaries")">
+                <i class="bi bi-folder2"></i> «Справочники и Реестры»
+            </a>
+            <a class="btn btn-menu btn-success-custom w-100 mb-3" href="@Url.Action("Index", "PlantingJournal")">
+                <i class="bi bi-journal-text"></i> «Журнал посевов»
+            </a>
+            <a class="btn btn-menu btn-exit w-100 mt-5" href="@Url.Action("Logout", "Account")">
+                <i class="bi bi-box-arrow-right"></i> «Выход»
+            </a>
+        </div>
+
+        <div class="col-md-9 main-content-area p-4">
+            <h3 class="panel-header mb-4">Панель Уведомлений ИС</h3>
+
+            <div class="card shadow-sm">
+                <div class="card-header bg-light">
+                    <h5 class="m-0">Таблица Уведомлений (Текущие задачи, наряды и критические оповещения)</h5>
+                </div>
+                <div class="card-body p-0">
+                    <table class="table table-hover m-0 table-striped">
+                        <thead>
+                            <tr>
+                                <th>Тип</th>
+                                <th>Описание события</th>
+                                <th>Статус</th>
+                                <th>Дата</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr class="@(item.IsCritical ? "table-danger-alert" : "")">
+                                    <td><span class="badge @item.BadgeClass">@item.Type</span></td>
+                                    <td>@item.Description</td>
+                                    <td><strong>@item.StatusText</strong></td>
+                                    <td>@item.CreationDate.ToShortDateString()</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Стилизация согласно требованиям ТЗ спецификации */
+    .btn-menu {
+        font-family: 'Verdana', sans-serif !important;
+        font-size: 18pt !important;
+        font-weight: bold;
+        padding: 15px;
+        text-align: left;
+        border-radius: 8px;
+    }
+    .btn-success-custom {
+        background-color: #28a745;
+        color: white;
+        border: 1px solid #1e7e34;
+    }
+    .btn-success-custom:hover {
+        background-color: #218838;
+        color: #f8f9fa;
+    }
+    .btn-exit {
+        background-color: #dc3545;
+        color: white;
+    }
+    .table-danger-alert {
+        background-color: #fff3cd !important;
+        border-left: 5px solid #ffc107;
+    }
+</style>
