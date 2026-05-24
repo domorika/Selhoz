@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Selhoz")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e0590e2aba7124c1818da6e36071806eb46514a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ef5e789a939ce7038d4eb6219bcd41e84ebb26a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Selhoz")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Selhoz")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,28 +3,92 @@
   "WorkspaceRootPath": "C:\\Users\\13\\source\\repos\\Selhoz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\controllers\\workerscontroller.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:controllers\\workerscontroller.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\views\\workers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:views\\workers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\views\\workers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:views\\workers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\views\\plants\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:views\\plants\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\views\\plants\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:views\\plants\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\views\\plantingjournal\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:views\\plantingjournal\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\views\\plantingjournal\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:views\\plantingjournal\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\views\\workers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:views\\workers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\views\\fields\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:views\\fields\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\views\\fields\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:views\\fields\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\services\\caesarcipher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:services\\caesarcipher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\models\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:models\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\models\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:models\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\models\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:models\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\controllers\\plantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:controllers\\plantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\controllers\\workerscontroller.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:controllers\\workerscontroller.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\controllers\\fieldscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:controllers\\fieldscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\controllers\\plantingjournalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:controllers\\plantingjournalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\migrations\\20260523183610_addallmodels.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,14 +105,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\controllers\\fieldscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:controllers\\fieldscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|c:\\users\\13\\source\\repos\\selhoz\\views\\fields\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{63949CF6-9290-411D-ADB8-EC1CFE0DD20A}|Selhoz.csproj|solutionrelative:views\\fields\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,71 +114,234 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WorkersController.cs.cs",
-              "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Controllers\\WorkersController.cs.cs",
-              "RelativeDocumentMoniker": "Controllers\\WorkersController.cs.cs",
-              "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Controllers\\WorkersController.cs.cs",
-              "RelativeToolTip": "Controllers\\WorkersController.cs.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA5wC4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T22:12:05.037Z",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\Workers\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Workers\\Create.cshtml",
+              "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\Workers\\Create.cshtml",
+              "RelativeToolTip": "Views\\Workers\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-24T10:48:01.752Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\Plants\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Plants\\Index.cshtml",
+              "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\Plants\\Index.cshtml",
+              "RelativeToolTip": "Views\\Plants\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACgAAAB5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-23T22:48:19.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\Plants\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Plants\\Create.cshtml",
+              "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\Plants\\Create.cshtml",
+              "RelativeToolTip": "Views\\Plants\\Create.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-23T22:48:10.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\PlantingJournal\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\PlantingJournal\\Create.cshtml",
+              "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\PlantingJournal\\Create.cshtml",
+              "RelativeToolTip": "Views\\PlantingJournal\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-23T22:47:31.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-23T22:46:33.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-23T22:45:56.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-23T22:45:38.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CaesarCipher.cs",
+              "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Services\\CaesarCipher.cs",
+              "RelativeDocumentMoniker": "Services\\CaesarCipher.cs",
+              "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Services\\CaesarCipher.cs",
+              "RelativeToolTip": "Services\\CaesarCipher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T22:45:36.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Field.cs",
+              "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Models\\Field.cs",
+              "RelativeDocumentMoniker": "Models\\Field.cs",
+              "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Models\\Field.cs",
+              "RelativeToolTip": "Models\\Field.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T22:45:33.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Models\\ViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Models\\ViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T22:45:32.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Models\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Models\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T22:45:31.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T22:45:25.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-23T22:31:51.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PlantsController.cs",
+              "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Controllers\\PlantsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PlantsController.cs",
+              "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Controllers\\PlantsController.cs",
+              "RelativeToolTip": "Controllers\\PlantsController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwCQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T22:30:26.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "WorkersController.cs.cs",
+              "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Controllers\\WorkersController.cs.cs",
+              "RelativeDocumentMoniker": "Controllers\\WorkersController.cs.cs",
+              "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Controllers\\WorkersController.cs.cs",
+              "RelativeToolTip": "Controllers\\WorkersController.cs.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwDMAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T22:12:05.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\Workers\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Workers\\Index.cshtml",
               "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\Workers\\Index.cshtml",
               "RelativeToolTip": "Views\\Workers\\Index.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACQAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-23T22:11:29.297Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\PlantingJournal\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\PlantingJournal\\Index.cshtml",
               "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\PlantingJournal\\Index.cshtml",
               "RelativeToolTip": "Views\\PlantingJournal\\Index.cshtml",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAE8AAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-23T22:11:01.425Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T22:11:01.425Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 20,
               "Title": "PlantingJournalController.cs",
               "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Controllers\\PlantingJournalController.cs",
               "RelativeDocumentMoniker": "Controllers\\PlantingJournalController.cs",
               "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Controllers\\PlantingJournalController.cs",
               "RelativeToolTip": "Controllers\\PlantingJournalController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAYwEQAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T22:03:51.186Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T22:03:51.186Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 21,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -130,12 +349,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T22:02:46.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T22:02:46.573Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 22,
               "Title": "20260523183610_AddAllModels.Designer.cs",
               "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Migrations\\20260523183610_AddAllModels.Designer.cs",
               "RelativeDocumentMoniker": "Migrations\\20260523183610_AddAllModels.Designer.cs",
@@ -143,12 +361,11 @@
               "RelativeToolTip": "Migrations\\20260523183610_AddAllModels.Designer.cs",
               "ViewState": "AgIAADgBAAAAAAAAAAAqwD4BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T21:52:33.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T21:52:33.675Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 23,
               "Title": "20260523213836_RenameCultureToPlant.cs",
               "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Migrations\\20260523213836_RenameCultureToPlant.cs",
               "RelativeDocumentMoniker": "Migrations\\20260523213836_RenameCultureToPlant.cs",
@@ -156,12 +373,11 @@
               "RelativeToolTip": "Migrations\\20260523213836_RenameCultureToPlant.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAiwDcAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T21:52:24.152Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T21:52:24.152Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 24,
               "Title": "20260523183610_AddAllModels.cs",
               "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Migrations\\20260523183610_AddAllModels.cs",
               "RelativeDocumentMoniker": "Migrations\\20260523183610_AddAllModels.cs",
@@ -169,12 +385,11 @@
               "RelativeToolTip": "Migrations\\20260523183610_AddAllModels.cs",
               "ViewState": "AgIAAMUBAAAAAAAAAAAqwNcBAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T21:51:42.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T21:51:42.109Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 25,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
@@ -182,47 +397,47 @@
               "RelativeToolTip": "Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T21:51:11.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T21:51:11.61Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "FieldsController.cs",
               "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Controllers\\FieldsController.cs",
               "RelativeDocumentMoniker": "Controllers\\FieldsController.cs",
               "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Controllers\\FieldsController.cs",
               "RelativeToolTip": "Controllers\\FieldsController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAA1wCoAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T21:49:53.677Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T21:49:53.677Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\Fields\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Fields\\Index.cshtml",
               "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\Fields\\Index.cshtml",
               "RelativeToolTip": "Views\\Fields\\Index.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAC8AAAB5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-23T21:49:41.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T21:49:41.524Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\Fields\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Fields\\Create.cshtml",
               "ToolTip": "C:\\Users\\13\\source\\repos\\Selhoz\\Views\\Fields\\Create.cshtml",
               "RelativeToolTip": "Views\\Fields\\Create.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-23T21:49:40.38Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T21:49:40.38Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

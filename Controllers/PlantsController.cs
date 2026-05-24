@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Selhoz.Data;
 using Selhoz.Models;
+using System.Security.Claims;
 
 namespace Selhoz.Controllers
 {
@@ -29,6 +30,24 @@ namespace Selhoz.Controllers
             if (ModelState.IsValid)
             {
                 _context.Plants.Add(plant);
+                string userRole = User.IsInRole("Agronom") ? "Агроном" :
+                          User.IsInRole("Director") ? "Директор" : "Сотрудник";
+
+                // 2. Получаем ID текущего пользователя (ему и покажем уведомление)
+                string currentUserId = User.FindFirstValue(System.Security.Claims.ClaimTypes.NameIdentifier);
+
+                // 3. Формируем само уведомление
+                var notification = new Notification
+                {
+                    Title = "Обновление базы данных",
+                    Message = $"{userRole} добавил новую запись в таблицу «Культуры».",
+                    IsRead = false,
+                    UserId = currentUserId,
+                    Type = "Info"
+                };
+
+                // 4. Добавляем уведомление в базу
+                _context.Notifications.Add(notification);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
